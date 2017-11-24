@@ -1,7 +1,0 @@
-{  
-global:  
-  createRTMapperGUI;
-  createMapFusion;
-  main;
-local: *;  
-};

@@ -121,11 +121,59 @@ CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o.provides: CMakeFiles/Delau
 
 CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o.provides.build: CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o
 
+CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o: CMakeFiles/Delaunay_pic.dir/flags.make
+CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o: ../src/display/Display_qgl.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hj/work/dem/Delaunay_pic/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o -c /home/hj/work/dem/Delaunay_pic/src/display/Display_qgl.cpp
+
+CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hj/work/dem/Delaunay_pic/src/display/Display_qgl.cpp > CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.i
+
+CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hj/work/dem/Delaunay_pic/src/display/Display_qgl.cpp -o CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.s
+
+CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o.requires:
+.PHONY : CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o.requires
+
+CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o.provides: CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o.provides.build
+.PHONY : CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o.provides
+
+CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o.provides.build: CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o
+
+CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o: CMakeFiles/Delaunay_pic.dir/flags.make
+CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o: ../src/points/Points_filter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hj/work/dem/Delaunay_pic/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o -c /home/hj/work/dem/Delaunay_pic/src/points/Points_filter.cpp
+
+CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hj/work/dem/Delaunay_pic/src/points/Points_filter.cpp > CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.i
+
+CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hj/work/dem/Delaunay_pic/src/points/Points_filter.cpp -o CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.s
+
+CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.requires:
+.PHONY : CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.requires
+
+CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.provides: CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.provides.build
+.PHONY : CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.provides
+
+CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.provides.build: CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o
+
 # Object files for target Delaunay_pic
 Delaunay_pic_OBJECTS = \
 "CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o" \
 "CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o" \
-"CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o"
+"CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o" \
+"CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o" \
+"CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o"
 
 # External object files for target Delaunay_pic
 Delaunay_pic_EXTERNAL_OBJECTS =
@@ -133,6 +181,8 @@ Delaunay_pic_EXTERNAL_OBJECTS =
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o
+Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o
+Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/build.make
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libmpfr.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libgmp.so
@@ -140,7 +190,9 @@ Delaunay_pic: /usr/lib/libCGAL.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libboost_system.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libpthread.so
+Delaunay_pic: /usr/lib/x86_64-linux-gnu/libQtOpenGL.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libQtGui.so
+Delaunay_pic: /usr/lib/x86_64-linux-gnu/libQtXml.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libQtCore.so
 Delaunay_pic: /usr/lib/libCGAL.so
 Delaunay_pic: /usr/local/lib/libopencv_highgui.so
@@ -161,10 +213,15 @@ Delaunay_pic: /usr/local/lib/libopencv_gpu.so
 Delaunay_pic: /usr/local/lib/libopencv_core.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libIlmImf.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libglog.so
+Delaunay_pic: /usr/lib/x86_64-linux-gnu/libGL.so
+Delaunay_pic: /usr/lib/x86_64-linux-gnu/libGLU.so
+Delaunay_pic: /usr/lib/x86_64-linux-gnu/libQGLViewer.so.2.5
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libboost_system.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libpthread.so
+Delaunay_pic: /usr/lib/x86_64-linux-gnu/libQtOpenGL.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libQtGui.so
+Delaunay_pic: /usr/lib/x86_64-linux-gnu/libQtXml.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libQtCore.so
 Delaunay_pic: /usr/local/lib/libopencv_highgui.so
 Delaunay_pic: /usr/local/lib/libopencv_calib3d.so
@@ -184,6 +241,9 @@ Delaunay_pic: /usr/local/lib/libopencv_gpu.so
 Delaunay_pic: /usr/local/lib/libopencv_core.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libIlmImf.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libglog.so
+Delaunay_pic: /usr/lib/x86_64-linux-gnu/libGL.so
+Delaunay_pic: /usr/lib/x86_64-linux-gnu/libGLU.so
+Delaunay_pic: /usr/lib/x86_64-linux-gnu/libQGLViewer.so.2.5
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable Delaunay_pic"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Delaunay_pic.dir/link.txt --verbose=$(VERBOSE)
@@ -195,6 +255,8 @@ CMakeFiles/Delaunay_pic.dir/build: Delaunay_pic
 CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o.requires
 CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o.requires
 CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o.requires
+CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o.requires
+CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.requires
 .PHONY : CMakeFiles/Delaunay_pic.dir/requires
 
 CMakeFiles/Delaunay_pic.dir/clean:

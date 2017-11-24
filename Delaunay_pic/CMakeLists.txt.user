@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.2.82, 2017-11-14T18:43:42. -->
+<!-- Written by QtCreator 4.2.82, 2017-11-23T19:28:08. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -344,7 +344,7 @@
     <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.UserWorkingDirectory.default">/home/hj/work/dem/build-Delaunay_pic-Desktop-Default</value>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Delaunay_pic</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Delaunay_pic (disabled)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.Delaunay_pic</value>
     <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>

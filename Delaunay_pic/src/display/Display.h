@@ -4,10 +4,10 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 
-class Display
+class Display_cv
 {
 public:
-    Display();
+    Display_cv();
 
     void show(cv::Mat img, std::vector<cv::Point2d> pts);
 

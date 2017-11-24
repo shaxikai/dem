@@ -138,6 +138,30 @@ src/display/Display.cpp.s:
 	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.s
 .PHONY : src/display/Display.cpp.s
 
+src/display/Display_qgl.o: src/display/Display_qgl.cpp.o
+.PHONY : src/display/Display_qgl.o
+
+# target to build an object file
+src/display/Display_qgl.cpp.o:
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o
+.PHONY : src/display/Display_qgl.cpp.o
+
+src/display/Display_qgl.i: src/display/Display_qgl.cpp.i
+.PHONY : src/display/Display_qgl.i
+
+# target to preprocess a source file
+src/display/Display_qgl.cpp.i:
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.i
+.PHONY : src/display/Display_qgl.cpp.i
+
+src/display/Display_qgl.s: src/display/Display_qgl.cpp.s
+.PHONY : src/display/Display_qgl.s
+
+# target to generate assembly for a file
+src/display/Display_qgl.cpp.s:
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.s
+.PHONY : src/display/Display_qgl.cpp.s
+
 src/mesher/Triangler.o: src/mesher/Triangler.cpp.o
 .PHONY : src/mesher/Triangler.o
 
@@ -161,6 +185,30 @@ src/mesher/Triangler.s: src/mesher/Triangler.cpp.s
 src/mesher/Triangler.cpp.s:
 	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.s
 .PHONY : src/mesher/Triangler.cpp.s
+
+src/points/Points_filter.o: src/points/Points_filter.cpp.o
+.PHONY : src/points/Points_filter.o
+
+# target to build an object file
+src/points/Points_filter.cpp.o:
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o
+.PHONY : src/points/Points_filter.cpp.o
+
+src/points/Points_filter.i: src/points/Points_filter.cpp.i
+.PHONY : src/points/Points_filter.i
+
+# target to preprocess a source file
+src/points/Points_filter.cpp.i:
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.i
+.PHONY : src/points/Points_filter.cpp.i
+
+src/points/Points_filter.s: src/points/Points_filter.cpp.s
+.PHONY : src/points/Points_filter.s
+
+# target to generate assembly for a file
+src/points/Points_filter.cpp.s:
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.s
+.PHONY : src/points/Points_filter.cpp.s
 
 src/test/Delaunay_pic.o: src/test/Delaunay_pic.cpp.o
 .PHONY : src/test/Delaunay_pic.o
@@ -198,9 +246,15 @@ help:
 	@echo "... src/display/Display.o"
 	@echo "... src/display/Display.i"
 	@echo "... src/display/Display.s"
+	@echo "... src/display/Display_qgl.o"
+	@echo "... src/display/Display_qgl.i"
+	@echo "... src/display/Display_qgl.s"
 	@echo "... src/mesher/Triangler.o"
 	@echo "... src/mesher/Triangler.i"
 	@echo "... src/mesher/Triangler.s"
+	@echo "... src/points/Points_filter.o"
+	@echo "... src/points/Points_filter.i"
+	@echo "... src/points/Points_filter.s"
 	@echo "... src/test/Delaunay_pic.o"
 	@echo "... src/test/Delaunay_pic.i"
 	@echo "... src/test/Delaunay_pic.s"
