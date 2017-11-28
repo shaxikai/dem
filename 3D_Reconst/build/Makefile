@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hj/work/dem/3D_Reconst
+CMAKE_SOURCE_DIR = /home/hj/work/dem/Delaunay_pic
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hj/work/dem/3D_Reconst/build
+CMAKE_BINARY_DIR = /home/hj/work/dem/Delaunay_pic/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hj/work/dem/3D_Reconst/build/CMakeFiles /home/hj/work/dem/3D_Reconst/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hj/work/dem/Delaunay_pic/build/CMakeFiles /home/hj/work/dem/Delaunay_pic/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hj/work/dem/3D_Reconst/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hj/work/dem/Delaunay_pic/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -210,6 +210,30 @@ src/points/Points_filter.cpp.s:
 	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.s
 .PHONY : src/points/Points_filter.cpp.s
 
+src/struct_class/Struct_Class.o: src/struct_class/Struct_Class.cpp.o
+.PHONY : src/struct_class/Struct_Class.o
+
+# target to build an object file
+src/struct_class/Struct_Class.cpp.o:
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o
+.PHONY : src/struct_class/Struct_Class.cpp.o
+
+src/struct_class/Struct_Class.i: src/struct_class/Struct_Class.cpp.i
+.PHONY : src/struct_class/Struct_Class.i
+
+# target to preprocess a source file
+src/struct_class/Struct_Class.cpp.i:
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.i
+.PHONY : src/struct_class/Struct_Class.cpp.i
+
+src/struct_class/Struct_Class.s: src/struct_class/Struct_Class.cpp.s
+.PHONY : src/struct_class/Struct_Class.s
+
+# target to generate assembly for a file
+src/struct_class/Struct_Class.cpp.s:
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.s
+.PHONY : src/struct_class/Struct_Class.cpp.s
+
 src/test/Delaunay_pic.o: src/test/Delaunay_pic.cpp.o
 .PHONY : src/test/Delaunay_pic.o
 
@@ -255,6 +279,9 @@ help:
 	@echo "... src/points/Points_filter.o"
 	@echo "... src/points/Points_filter.i"
 	@echo "... src/points/Points_filter.s"
+	@echo "... src/struct_class/Struct_Class.o"
+	@echo "... src/struct_class/Struct_Class.i"
+	@echo "... src/struct_class/Struct_Class.s"
 	@echo "... src/test/Delaunay_pic.o"
 	@echo "... src/test/Delaunay_pic.i"
 	@echo "... src/test/Delaunay_pic.s"

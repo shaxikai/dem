@@ -1,8 +1,10 @@
+#include <algorithm>
+
 #include "Triangler.h"
 
 void Triangler::triPts(std::vector<Point> &pt)
 {
-
+    points = pt;
 
     Delaunay der;
     der.insert(pt.begin(), pt.end());
@@ -10,21 +12,22 @@ void Triangler::triPts(std::vector<Point> &pt)
     for (; fit != der.finite_faces_end(); ++fit) {
         for (int i=0; i<3; ++i)
             pts.push_back(fit->vertex(i)->point());
-
-
-//        pts.push_back(pi::Point2d(fit->vertex(0)->point().hx(), fit->vertex(0)->point().hy()));
-//        //pts.push_back(QPoint(fit->vertex(1)->point().hx(), fit->vertex(1)->point().hy()));
-//        pts.push_back(pi::Point2d(fit->vertex(1)->point().hx(), fit->vertex(1)->point().hy()));
-//        //pts.push_back(QPoint(fit->vertex(2)->point().hx(), fit->vertex(2)->point().hy()));
-//        pts.push_back(pi::Point2d(fit->vertex(2)->point().hx(), fit->vertex(2)->point().hy()));
-//        //pts.push_back(QPoint(fit->vertex(0)->point().hx(), fit->vertex(0)->point().hy()));
     }
+
+
+    tris.resize(pts.size() / 3);
     for (int i=0; i<pts.size(); ++i) {
         for (int j=0; j<pt.size(); ++j) {
             if(pts[i] == pt[j])
-                id.push_back(j);
+            {
+                if (i%3 == 0) tris[i/3].c_1 = j;
+                if (i%3 == 1) tris[i/3].c_2 = j;
+                if (i%3 == 2) tris[i/3].c_3 = j;
+            }
         }
     }
     triNum = der.number_of_faces();
-    //std::cout << triNum << std::endl;
+
 }
+
+

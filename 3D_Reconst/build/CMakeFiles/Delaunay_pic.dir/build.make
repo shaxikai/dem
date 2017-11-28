@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hj/work/dem/3D_Reconst
+CMAKE_SOURCE_DIR = /home/hj/work/dem/Delaunay_pic
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hj/work/dem/3D_Reconst/build
+CMAKE_BINARY_DIR = /home/hj/work/dem/Delaunay_pic/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Delaunay_pic.dir/depend.make
@@ -54,17 +54,17 @@ include CMakeFiles/Delaunay_pic.dir/flags.make
 
 CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o: CMakeFiles/Delaunay_pic.dir/flags.make
 CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o: ../src/test/Delaunay_pic.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hj/work/dem/3D_Reconst/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hj/work/dem/Delaunay_pic/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o -c /home/hj/work/dem/3D_Reconst/src/test/Delaunay_pic.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o -c /home/hj/work/dem/Delaunay_pic/src/test/Delaunay_pic.cpp
 
 CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hj/work/dem/3D_Reconst/src/test/Delaunay_pic.cpp > CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hj/work/dem/Delaunay_pic/src/test/Delaunay_pic.cpp > CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.i
 
 CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hj/work/dem/3D_Reconst/src/test/Delaunay_pic.cpp -o CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hj/work/dem/Delaunay_pic/src/test/Delaunay_pic.cpp -o CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.s
 
 CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o.requires:
 .PHONY : CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o.requires
@@ -77,17 +77,17 @@ CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o: CMakeFiles/Delaunay_pic.dir/flags.make
 CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o: ../src/mesher/Triangler.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hj/work/dem/3D_Reconst/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hj/work/dem/Delaunay_pic/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o -c /home/hj/work/dem/3D_Reconst/src/mesher/Triangler.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o -c /home/hj/work/dem/Delaunay_pic/src/mesher/Triangler.cpp
 
 CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hj/work/dem/3D_Reconst/src/mesher/Triangler.cpp > CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hj/work/dem/Delaunay_pic/src/mesher/Triangler.cpp > CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.i
 
 CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hj/work/dem/3D_Reconst/src/mesher/Triangler.cpp -o CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hj/work/dem/Delaunay_pic/src/mesher/Triangler.cpp -o CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.s
 
 CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o.requires:
 .PHONY : CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o.requires
@@ -100,17 +100,17 @@ CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o: CMakeFiles/Delaunay_pic.dir/flags.make
 CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o: ../src/display/Display.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hj/work/dem/3D_Reconst/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hj/work/dem/Delaunay_pic/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o -c /home/hj/work/dem/3D_Reconst/src/display/Display.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o -c /home/hj/work/dem/Delaunay_pic/src/display/Display.cpp
 
 CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hj/work/dem/3D_Reconst/src/display/Display.cpp > CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hj/work/dem/Delaunay_pic/src/display/Display.cpp > CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.i
 
 CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hj/work/dem/3D_Reconst/src/display/Display.cpp -o CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hj/work/dem/Delaunay_pic/src/display/Display.cpp -o CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.s
 
 CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o.requires:
 .PHONY : CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o.requires
@@ -123,17 +123,17 @@ CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o: CMakeFiles/Delaunay_pic.dir/flags.make
 CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o: ../src/display/Display_qgl.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hj/work/dem/3D_Reconst/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hj/work/dem/Delaunay_pic/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o -c /home/hj/work/dem/3D_Reconst/src/display/Display_qgl.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o -c /home/hj/work/dem/Delaunay_pic/src/display/Display_qgl.cpp
 
 CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hj/work/dem/3D_Reconst/src/display/Display_qgl.cpp > CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hj/work/dem/Delaunay_pic/src/display/Display_qgl.cpp > CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.i
 
 CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hj/work/dem/3D_Reconst/src/display/Display_qgl.cpp -o CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hj/work/dem/Delaunay_pic/src/display/Display_qgl.cpp -o CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.s
 
 CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o.requires:
 .PHONY : CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o.requires
@@ -146,17 +146,17 @@ CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o.provides.build: CMakeF
 
 CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o: CMakeFiles/Delaunay_pic.dir/flags.make
 CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o: ../src/points/Points_filter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hj/work/dem/3D_Reconst/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hj/work/dem/Delaunay_pic/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o -c /home/hj/work/dem/3D_Reconst/src/points/Points_filter.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o -c /home/hj/work/dem/Delaunay_pic/src/points/Points_filter.cpp
 
 CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hj/work/dem/3D_Reconst/src/points/Points_filter.cpp > CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hj/work/dem/Delaunay_pic/src/points/Points_filter.cpp > CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.i
 
 CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hj/work/dem/3D_Reconst/src/points/Points_filter.cpp -o CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hj/work/dem/Delaunay_pic/src/points/Points_filter.cpp -o CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.s
 
 CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.requires:
 .PHONY : CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.requires
@@ -167,13 +167,37 @@ CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.provides: CMakeFiles/
 
 CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.provides.build: CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o
 
+CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o: CMakeFiles/Delaunay_pic.dir/flags.make
+CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o: ../src/struct_class/Struct_Class.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hj/work/dem/Delaunay_pic/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o -c /home/hj/work/dem/Delaunay_pic/src/struct_class/Struct_Class.cpp
+
+CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hj/work/dem/Delaunay_pic/src/struct_class/Struct_Class.cpp > CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.i
+
+CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hj/work/dem/Delaunay_pic/src/struct_class/Struct_Class.cpp -o CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.s
+
+CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.requires:
+.PHONY : CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.requires
+
+CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.provides: CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.provides.build
+.PHONY : CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.provides
+
+CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.provides.build: CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o
+
 # Object files for target Delaunay_pic
 Delaunay_pic_OBJECTS = \
 "CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o" \
 "CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o" \
 "CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o" \
 "CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o" \
-"CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o"
+"CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o" \
+"CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o"
 
 # External object files for target Delaunay_pic
 Delaunay_pic_EXTERNAL_OBJECTS =
@@ -183,6 +207,7 @@ Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o
+Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/build.make
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libmpfr.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libgmp.so
@@ -257,6 +282,7 @@ CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/mesher/Tri
 CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o.requires
 CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o.requires
 CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.requires
+CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.requires
 .PHONY : CMakeFiles/Delaunay_pic.dir/requires
 
 CMakeFiles/Delaunay_pic.dir/clean:
@@ -264,6 +290,6 @@ CMakeFiles/Delaunay_pic.dir/clean:
 .PHONY : CMakeFiles/Delaunay_pic.dir/clean
 
 CMakeFiles/Delaunay_pic.dir/depend:
-	cd /home/hj/work/dem/3D_Reconst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hj/work/dem/3D_Reconst /home/hj/work/dem/3D_Reconst /home/hj/work/dem/3D_Reconst/build /home/hj/work/dem/3D_Reconst/build /home/hj/work/dem/3D_Reconst/build/CMakeFiles/Delaunay_pic.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hj/work/dem/Delaunay_pic/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hj/work/dem/Delaunay_pic /home/hj/work/dem/Delaunay_pic /home/hj/work/dem/Delaunay_pic/build /home/hj/work/dem/Delaunay_pic/build /home/hj/work/dem/Delaunay_pic/build/CMakeFiles/Delaunay_pic.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Delaunay_pic.dir/depend
 

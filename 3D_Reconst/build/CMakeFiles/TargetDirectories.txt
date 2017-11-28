@@ -1,1 +1,1 @@
-/home/hj/work/dem/3D_Reconst/build/CMakeFiles/Delaunay_pic.dir
+/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/Delaunay_pic.dir

@@ -1,21 +1,21 @@
 Determining if the Q_WS_WIN exist failed with the following output:
-Change Dir: /home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp
+Change Dir: /home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec949862697/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec949862697.dir/build.make CMakeFiles/cmTryCompileExec949862697.dir/build
-make[1]: Entering directory `/home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec949862697.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++    -O3 -std=c++0x  -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec949862697.dir/CheckSymbolExists.cxx.o -c /home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-/home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
-/home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+Run Build Command:/usr/bin/make "cmTryCompileExec1217414474/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1217414474.dir/build.make CMakeFiles/cmTryCompileExec1217414474.dir/build
+make[1]: Entering directory `/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1217414474.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -O3 -std=c++0x  -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec1217414474.dir/CheckSymbolExists.cxx.o -c /home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
    return ((int*)(&Q_WS_WIN))[argc];
                    ^
-make[1]: *** [CMakeFiles/cmTryCompileExec949862697.dir/CheckSymbolExists.cxx.o] Error 1
-make[1]: Leaving directory `/home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp'
-make: *** [cmTryCompileExec949862697/fast] Error 2
+make[1]: *** [CMakeFiles/cmTryCompileExec1217414474.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory `/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1217414474/fast] Error 2
 
-File /home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+File /home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
 #include <QtCore/qglobal.h>
 
@@ -31,23 +31,23 @@ int main(int argc, char** argv)
 }
 
 Determining if the Q_WS_QWS exist failed with the following output:
-Change Dir: /home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp
+Change Dir: /home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec2630610665/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2630610665.dir/build.make CMakeFiles/cmTryCompileExec2630610665.dir/build
-make[1]: Entering directory `/home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec2630610665.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++    -O3 -std=c++0x  -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec2630610665.dir/CheckSymbolExists.cxx.o -c /home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-/home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
-/home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+Run Build Command:/usr/bin/make "cmTryCompileExec38046549/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec38046549.dir/build.make CMakeFiles/cmTryCompileExec38046549.dir/build
+make[1]: Entering directory `/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec38046549.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -O3 -std=c++0x  -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec38046549.dir/CheckSymbolExists.cxx.o -c /home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
    return ((int*)(&Q_WS_QWS))[argc];
                    ^
-make[1]: Leaving directory `/home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp'
-make[1]: *** [CMakeFiles/cmTryCompileExec2630610665.dir/CheckSymbolExists.cxx.o] Error 1
-make: *** [cmTryCompileExec2630610665/fast] Error 2
+make[1]: Leaving directory `/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec38046549.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTryCompileExec38046549/fast] Error 2
 
-File /home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+File /home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
 #include <QtCore/qglobal.h>
 
@@ -63,23 +63,23 @@ int main(int argc, char** argv)
 }
 
 Determining if the Q_WS_MAC exist failed with the following output:
-Change Dir: /home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp
+Change Dir: /home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec2588726094/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2588726094.dir/build.make CMakeFiles/cmTryCompileExec2588726094.dir/build
-make[1]: Entering directory `/home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec2588726094.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++    -O3 -std=c++0x  -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec2588726094.dir/CheckSymbolExists.cxx.o -c /home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-/home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
-/home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+Run Build Command:/usr/bin/make "cmTryCompileExec3774748763/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3774748763.dir/build.make CMakeFiles/cmTryCompileExec3774748763.dir/build
+make[1]: Entering directory `/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3774748763.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -O3 -std=c++0x  -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec3774748763.dir/CheckSymbolExists.cxx.o -c /home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
    return ((int*)(&Q_WS_MAC))[argc];
                    ^
-make[1]: *** [CMakeFiles/cmTryCompileExec2588726094.dir/CheckSymbolExists.cxx.o] Error 1
-make[1]: Leaving directory `/home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp'
-make: *** [cmTryCompileExec2588726094/fast] Error 2
+make[1]: Leaving directory `/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3774748763.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTryCompileExec3774748763/fast] Error 2
 
-File /home/hj/work/dem/3D_Reconst/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+File /home/hj/work/dem/Delaunay_pic/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
 #include <QtCore/qglobal.h>
 

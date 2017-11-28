@@ -8,6 +8,8 @@
 #include <CGAL/Delaunay_triangulation_2.h>
 #include <cmath>
 
+#include "Struct_Class.h"
+
 typedef CGAL::Exact_predicates_inexact_constructions_kernel K;
 typedef CGAL::Delaunay_triangulation_2<K> Delaunay;
 typedef Delaunay::Vertex_handle Vertex_handle;
@@ -20,12 +22,14 @@ public:
     Triangler(){}
     ~Triangler(){}
 
-    void triPts(std::vector<Point> & pt);
+    void triPts(std::vector<Point>& pt);
 
-
-    std::vector<int>        id;
-    std::vector<Point>      pts;
+    std::vector<Point>      points;
+    std::vector<TriEle>     tris;
     int                     triNum;
+
+private :
+    std::vector<Point>      pts;
 
 };
 
