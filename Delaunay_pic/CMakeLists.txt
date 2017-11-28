@@ -38,6 +38,7 @@ INCLUDE_DIRECTORIES (BEFORE ./src/MapFusion/)
 INCLUDE_DIRECTORIES (BEFORE ./src/mesher/)
 INCLUDE_DIRECTORIES (BEFORE ./src/display/)
 INCLUDE_DIRECTORIES (BEFORE ./src/points/)
+INCLUDE_DIRECTORIES (BEFORE ./src/struct_class/)
 
 FIND_LIBRARY(QGLVIEWER_LIBRARY
         NAMES
@@ -67,6 +68,7 @@ SET(SOURCES_FILES
     ./src/display/Display.cpp
     ./src/display/Display_qgl.cpp
     ./src/points/Points_filter.cpp
+    ./src/struct_class/Struct_Class.cpp
     )
 
 LIST(APPEND LINK_LIBS

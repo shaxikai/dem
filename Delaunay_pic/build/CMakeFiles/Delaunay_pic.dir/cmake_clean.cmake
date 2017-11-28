@@ -4,6 +4,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o"
   "CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o"
   "CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o"
+  "CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o"
   "Delaunay_pic.pdb"
   "Delaunay_pic"
 )

@@ -167,13 +167,37 @@ CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.provides: CMakeFiles/
 
 CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.provides.build: CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o
 
+CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o: CMakeFiles/Delaunay_pic.dir/flags.make
+CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o: /home/hj/work/dem/Delaunay_pic/src/struct_class/Struct_Class.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hj/work/dem/build-Delaunay_pic-Desktop-Default/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o -c /home/hj/work/dem/Delaunay_pic/src/struct_class/Struct_Class.cpp
+
+CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.i"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hj/work/dem/Delaunay_pic/src/struct_class/Struct_Class.cpp > CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.i
+
+CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.s"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hj/work/dem/Delaunay_pic/src/struct_class/Struct_Class.cpp -o CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.s
+
+CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.requires:
+.PHONY : CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.requires
+
+CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.provides: CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.provides.build
+.PHONY : CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.provides
+
+CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.provides.build: CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o
+
 # Object files for target Delaunay_pic
 Delaunay_pic_OBJECTS = \
 "CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o" \
 "CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o" \
 "CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o" \
 "CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o" \
-"CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o"
+"CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o" \
+"CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o"
 
 # External object files for target Delaunay_pic
 Delaunay_pic_EXTERNAL_OBJECTS =
@@ -183,6 +207,7 @@ Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o
+Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/build.make
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libmpfr.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libgmp.so
@@ -257,6 +282,7 @@ CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/mesher/Tri
 CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o.requires
 CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o.requires
 CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.requires
+CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.requires
 .PHONY : CMakeFiles/Delaunay_pic.dir/requires
 
 CMakeFiles/Delaunay_pic.dir/clean:

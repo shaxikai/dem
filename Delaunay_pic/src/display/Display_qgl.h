@@ -5,13 +5,13 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <Point.h>
 
+#include "Struct_Class.h"
+
 
 class Display_qgl : public QGLViewer
 {
 public :
-    void input(std::vector<qglviewer::Vec>& pointClouds_,
-               std::vector<cv::Point2d>& pointPixs_,
-               cv::Mat image_);
+    void input(Frame frame_);
 
 protected :
     virtual void draw();
@@ -19,9 +19,7 @@ protected :
 
 private :
 
-    std::vector<qglviewer::Vec> pointClouds;
-    std::vector<pi::Point2d>      pointPixs;
-    cv::Mat image;
+    Frame frame;
 
 
 };

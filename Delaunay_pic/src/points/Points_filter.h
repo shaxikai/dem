@@ -3,6 +3,7 @@
 #include <vector>
 #include <iostream>
 #include <SE3.h>
+#include <Struct_Class.h>
 
 using namespace std;
 using namespace pi;
@@ -11,15 +12,17 @@ class Points_filter
 {
 public:
     Points_filter(){}
-    Points_filter(vector<Point2d>& pointPixs_, vector<Point3d>& pointClouds_);
+    Points_filter(Frame& frame_);
+
+    void setFrame(Frame& frame_);
 
     void ptcRansac();
     void pixFilter();
     void ptcFilter();
-    void ptsFilter();
+    void ptsPrefilter();
+    int ptsOutfilter();
 
-    vector<Point2d> pointPixs;
-    vector<Point3d> pointClouds;
+    Frame frame;
 };
 
 #endif // POINTS_FILTER_H

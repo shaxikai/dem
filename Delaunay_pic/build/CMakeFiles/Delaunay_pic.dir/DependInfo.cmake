@@ -8,6 +8,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/hj/work/dem/Delaunay_pic/src/display/Display_qgl.cpp" "/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o"
   "/home/hj/work/dem/Delaunay_pic/src/mesher/Triangler.cpp" "/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o"
   "/home/hj/work/dem/Delaunay_pic/src/points/Points_filter.cpp" "/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o"
+  "/home/hj/work/dem/Delaunay_pic/src/struct_class/Struct_Class.cpp" "/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o"
   "/home/hj/work/dem/Delaunay_pic/src/test/Delaunay_pic.cpp" "/home/hj/work/dem/Delaunay_pic/build/CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
@@ -29,6 +30,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
+  ".././src/struct_class"
   ".././src/points"
   ".././src/display"
   ".././src/mesher"

@@ -16,6 +16,7 @@ CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o
  /usr/local/include/opencv2/imgproc/types_c.h
 CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o
  .././src/MapFusion/Point.h
+ .././src/struct_class/Struct_Class.h
  /home/hj/work/dem/Delaunay_pic/src/display/Display_qgl.cpp
  /home/hj/work/dem/Delaunay_pic/src/display/Display_qgl.h
  /usr/local/include/opencv2/core/core.hpp
@@ -30,15 +31,51 @@ CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o
  /usr/local/include/opencv2/imgproc/types_c.h
 CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o
  .././src/MapFusion/Point.h
+ .././src/struct_class/Struct_Class.h
  /home/hj/work/dem/Delaunay_pic/src/mesher/Triangler.cpp
  /home/hj/work/dem/Delaunay_pic/src/mesher/Triangler.h
+ /usr/local/include/opencv2/core/core.hpp
+ /usr/local/include/opencv2/core/core_c.h
+ /usr/local/include/opencv2/core/mat.hpp
+ /usr/local/include/opencv2/core/operations.hpp
+ /usr/local/include/opencv2/core/types_c.h
+ /usr/local/include/opencv2/core/version.hpp
+ /usr/local/include/opencv2/highgui/highgui.hpp
+ /usr/local/include/opencv2/highgui/highgui_c.h
+ /usr/local/include/opencv2/imgproc/imgproc.hpp
+ /usr/local/include/opencv2/imgproc/types_c.h
 CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o
  .././src/MapFusion/Array.h
  .././src/MapFusion/Point.h
  .././src/MapFusion/SE3.h
  .././src/MapFusion/SO3.h
+ .././src/struct_class/Struct_Class.h
  /home/hj/work/dem/Delaunay_pic/src/points/Points_filter.cpp
  /home/hj/work/dem/Delaunay_pic/src/points/Points_filter.h
+ /usr/local/include/opencv2/core/core.hpp
+ /usr/local/include/opencv2/core/core_c.h
+ /usr/local/include/opencv2/core/mat.hpp
+ /usr/local/include/opencv2/core/operations.hpp
+ /usr/local/include/opencv2/core/types_c.h
+ /usr/local/include/opencv2/core/version.hpp
+ /usr/local/include/opencv2/highgui/highgui.hpp
+ /usr/local/include/opencv2/highgui/highgui_c.h
+ /usr/local/include/opencv2/imgproc/imgproc.hpp
+ /usr/local/include/opencv2/imgproc/types_c.h
+CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o
+ .././src/MapFusion/Point.h
+ /home/hj/work/dem/Delaunay_pic/src/struct_class/Struct_Class.cpp
+ /home/hj/work/dem/Delaunay_pic/src/struct_class/Struct_Class.h
+ /usr/local/include/opencv2/core/core.hpp
+ /usr/local/include/opencv2/core/core_c.h
+ /usr/local/include/opencv2/core/mat.hpp
+ /usr/local/include/opencv2/core/operations.hpp
+ /usr/local/include/opencv2/core/types_c.h
+ /usr/local/include/opencv2/core/version.hpp
+ /usr/local/include/opencv2/highgui/highgui.hpp
+ /usr/local/include/opencv2/highgui/highgui_c.h
+ /usr/local/include/opencv2/imgproc/imgproc.hpp
+ /usr/local/include/opencv2/imgproc/types_c.h
 CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o
  .././src/MapFusion/Array.h
  .././src/MapFusion/CoordinateTrans.h
@@ -50,6 +87,7 @@ CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o
  .././src/display/Display_qgl.h
  .././src/mesher/Triangler.h
  .././src/points/Points_filter.h
+ .././src/struct_class/Struct_Class.h
  /home/hj/work/dem/Delaunay_pic/src/test/Delaunay_pic.cpp
  /usr/include/qt4/Qt3Support/q3cstring.h
  /usr/include/qt4/Qt3Support/q3valuelist.h

@@ -65,6 +65,8 @@ opencv2/imgproc/imgproc.hpp
 -
 Point.h
 -
+Struct_Class.h
+.././src/display/Struct_Class.h
 
 .././src/mesher/Triangler.h
 Point.h
@@ -79,6 +81,8 @@ CGAL/Delaunay_triangulation_2.h
 -
 cmath
 -
+Struct_Class.h
+.././src/mesher/Struct_Class.h
 
 .././src/points/Points_filter.h
 vector
@@ -86,6 +90,18 @@ vector
 iostream
 -
 SE3.h
+-
+Struct_Class.h
+-
+
+.././src/struct_class/Struct_Class.h
+opencv2/highgui/highgui.hpp
+-
+opencv2/imgproc/imgproc.hpp
+-
+vector
+-
+Point.h
 -
 
 /home/hj/work/dem/Delaunay_pic/src/test/Delaunay_pic.cpp

@@ -11,17 +11,6 @@
 #include "Display_qgl.h"
 #include "Points_filter.h"
 
-//#include <Glog.h>
-
-//#include "MapFusion.h"
-
-struct Frame
-{
-    cv::Mat img;
-    std::vector<cv::Point2d> ptsCv;
-    std::vector<qglviewer::Vec> ptsQgl;
-
-};
 
 Frame frame;
 
@@ -83,9 +72,9 @@ int delaunayPic() {
         int l = timestamp.length();
         string imgNum = timestamp.substr(l-7, 3);
 
-        // img
+        // image
         string imgfile = datapath + "/images/DJI_0" + imgNum + ".JPG";
-        frame.img=cv::imread(imgfile);
+        frame.image=cv::imread(imgfile);
 
         // pose
         pi::SE3d pose;
@@ -146,96 +135,64 @@ int delaunayPic() {
             pointClouds.push_back(curPose*(Point3d(sparsePtc.x, sparsePtc.y, 1.0) / sparsePtc.z));
         }
 
-        Points_filter ptsFilter(pointPixs, pointClouds);
-        ptsFilter.ptsFilter();
+        frame.pointClouds = pointClouds;
+        frame.pointPixs   = pointPixs;
+        Points_filter ptsFilter(frame);
+        ptsFilter.ptsPrefilter();
         pointClouds.clear();
         pointPixs.clear();
-        pointClouds = ptsFilter.pointClouds;
-        pointPixs   = ptsFilter.pointPixs;
-
-
-
-        {
-//            for (int i = 0; i < ptNum; ++i) {
-//                Point2d pointPix;
-//                double depth, x, y, s;
-//                sst >> x >> y >> depth >> s;
-//                pointPix = camera.Project(Point3d(x, y, 1.0));
-//                int j = 0;
-//                for (; j<pointPixs.size(); ++j)
-//                    if ((int)pointPixs[j].x==(int)pointPix.x && (int)pointPixs[j].y==(int)pointPix.y) break;
-//                if (j == pointPixs.size()) {
-//                    pointPixs.push_back(pointPix);
-//                    sparsePtc.push_back(Point3d(x, y, depth));
-//                }
-//            }
-
-//            //cout << ptNum << endl;
-//            //cout << pointPixs.size() << endl;
-
-
-//            pointClouds.resize(sparsePtc.size());
-//            for (int i=0; i<pointClouds.size(); i++) {
-//                Point3d& pt=sparsePtc[i];
-//                pointClouds[i] = curPose*(Point3d(pt.x, pt.y, 1.0) / pt.z);
-//                //cout << pointClouds[i] << endl;
-//            }
-
-
-//            vector<int> id;
-//            for (int i=0; i<pointClouds.size(); ++i) {
-//                for (int j=0; j<pointClouds.size(); ++j) {
-//                    if (i!=j && (int)pointClouds[i].x==(int)pointClouds[j].x && (int)pointClouds[i].y==(int)pointClouds[j].y) {
-//                        if (pointClouds[i].z > pointClouds[j].z) id.push_back(j);
-//                        else id.push_back(i);
-//                    }
-//                }
-//            }
-//            sort(id.begin(), id.end());
-//            id.erase(unique(id.begin(), id.end()), id.end());
-
-
-//            int i_ = 0;
-//            for(vector<Point3d>::iterator it=pointClouds.begin(); it!=pointClouds.end();) {
-//                if (i_ == id.size()) break;
-//                if ((int)(*it).x==(int)pointClouds[id[i_]-i_].x && (int)(*it).y==(int)pointClouds[id[i_]-i_].y) {
-//                    it=pointClouds.erase(it);
-//                    ++i_;
-//                } else { ++it; }
-//            }
-
-//            i_ = 0;
-//            for(vector<Point2d>::iterator it=pointPixs.begin(); it!=pointPixs.end();) {
-//                if (i_ == id.size()) break;
-//                if ((int)(*it).x==(int)pointPixs[id[i_]-i_].x && (int)(*it).y==(int)pointPixs[id[i_]-i_].y) {
-//                    it=pointPixs.erase(it);
-//                    ++i_;
-//                } else { ++it; }
-//            }
-        }
-
-        //cout << pointClouds.size() << endl;
-
+        frame = ptsFilter.frame;
 
         std::vector<Point> pt;
-        for (int i=0; i<pointPixs.size(); ++i) {
-            pt.push_back(Point(pointPixs[i].x, pointPixs[i].y));
+        for (int i=0; i<frame.pointPixs.size(); ++i) {
+            pt.push_back(Point(frame.pointPixs[i].x, frame.pointPixs[i].y));
         }
+
         Triangler T;
         T.triPts(pt);
+        frame.tris = T.tris;
 
-        for (int i=0; i<T.pts.size(); ++i) {
-            frame.ptsCv.push_back(cv::Point2d(T.pts[i].hx(), T.pts[i].hy()));
+        int l_ = 1;
+        while(l_--)
+        {
+            ptsFilter.setFrame(frame);
+            l_ =ptsFilter.ptsOutfilter();
+            frame = ptsFilter.frame;
+
+            std::vector<Point> pt;
+            for (int i=0; i<frame.pointPixs.size(); ++i) {
+                pt.push_back(Point(frame.pointPixs[i].x, frame.pointPixs[i].y));
+            }
+
+            Triangler T;
+            T.triPts(pt);
+            frame.tris = T.tris;
+        }
+
+
+        int h_ = 1;
+        while(h_--)
+        {
+            for (int i=0; i<frame.pointClouds.size(); ++i) {
+                vector<int> neiPts = frame.pt_getNeipts(i);
+                if (neiPts.size()>5) {
+                    vector<double> neiPts_h;
+                    int size = neiPts.size();
+                    for (int j=0; j<size; ++j) {
+                        neiPts_h.push_back(frame.pointClouds[neiPts[j]].z);
+                        sort(neiPts_h.begin(), neiPts_h.end());
+                    }
+                    if (size%2 == 0)
+                        frame.pointClouds[i].z = 0.5 * (neiPts_h[size/2] + neiPts_h[size/2-1]);
+                    else
+                        frame.pointClouds[i].z = neiPts_h[size/2];
+                }
+            }
         }
 
 
 //        Display_cv D;
 //        D.show(frame.img, frame.ptsCv);
-
-        for (int i=0; i<T.id.size(); ++i) {
-            frame.ptsQgl.push_back(qglviewer::Vec(pointClouds[T.id[i]].x, pointClouds[T.id[i]].y, pointClouds[T.id[i]].z));
-        }
-
 
         if (count == 1) break;
     }
@@ -253,7 +210,7 @@ int main(int argc, char** argv)
 
     Display_qgl D_qgl;
     D_qgl.setWindowTitle("simpleViewer");
-    D_qgl.input(frame.ptsQgl, frame.ptsCv, frame.img);
+    D_qgl.input(frame);
     D_qgl.show();
 
     return application.exec();

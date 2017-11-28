@@ -35,6 +35,7 @@
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/display" />
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/mesher" />
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/points" />
+            <Add directory="/home/hj/work/dem/Delaunay_pic/./src/struct_class" />
             <Add directory="/home/hj/work/dem/build-Delaunay_pic-Desktop-Default" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -75,6 +76,7 @@
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/display" />
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/mesher" />
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/points" />
+            <Add directory="/home/hj/work/dem/Delaunay_pic/./src/struct_class" />
             <Add directory="/home/hj/work/dem/build-Delaunay_pic-Desktop-Default" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -116,6 +118,8 @@
       </Unit>
       <Unit filename="/home/hj/work/dem/Delaunay_pic/src/points/Points_filter.cpp">
       </Unit>
+      <Unit filename="/home/hj/work/dem/Delaunay_pic/src/struct_class/Struct_Class.cpp">
+      </Unit>
       <Unit filename="/home/hj/work/dem/Delaunay_pic/src/test/Delaunay_pic.cpp">
       </Unit>
       <Unit filename="/home/hj/work/dem/Delaunay_pic/src/display/Display.h">
@@ -125,6 +129,8 @@
       <Unit filename="/home/hj/work/dem/Delaunay_pic/src/mesher/Triangler.h">
       </Unit>
       <Unit filename="/home/hj/work/dem/Delaunay_pic/src/points/Points_filter.h">
+      </Unit>
+      <Unit filename="/home/hj/work/dem/Delaunay_pic/src/struct_class/Struct_Class.h">
       </Unit>
       <Unit filename="/home/hj/work/dem/Delaunay_pic/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />
