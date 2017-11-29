@@ -4,14 +4,19 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 
+#include "Struct_Class.h"
+
 class Display_cv
 {
 public:
-    Display_cv();
+    Display_cv(){}
+    Display_cv(Frame frame_);
 
-    void show(cv::Mat img, std::vector<cv::Point2d> pts);
 
-    cv::Mat image;
+    void frame2dem();
+
+    Frame frame;
+    Dem   dem;
 };
 
 #endif // DISPLAY_H

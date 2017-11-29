@@ -17,6 +17,26 @@
             <DistClean command="/usr/bin/make -f &quot;/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/hj/work/dem/build-Delaunay_pic-Desktop-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/hj/work/dem/build-Delaunay_pic-Desktop-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       <Target title="Delaunay_pic">
          <Option output="/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/Delaunay_pic" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/hj/work/dem/build-Delaunay_pic-Desktop-Default" />
@@ -24,13 +44,13 @@
          <Option type="1" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
             <Add option="-DQT_OPENGL_LIB" />
             <Add option="-DQT_GUI_LIB" />
             <Add option="-DQT_XML_LIB" />
             <Add option="-DQT_CORE_LIB" />
             <Add option="-DCGAL_USE_MPFR" />
             <Add option="-DCGAL_USE_GMP" />
-            <Add option="-DQT_NO_DEBUG" />
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/MapFusion" />
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/display" />
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/mesher" />
@@ -65,13 +85,13 @@
          <Option type="1" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
             <Add option="-DQT_OPENGL_LIB" />
             <Add option="-DQT_GUI_LIB" />
             <Add option="-DQT_XML_LIB" />
             <Add option="-DQT_CORE_LIB" />
             <Add option="-DCGAL_USE_MPFR" />
             <Add option="-DCGAL_USE_GMP" />
-            <Add option="-DQT_NO_DEBUG" />
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/MapFusion" />
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/display" />
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/mesher" />
@@ -99,38 +119,39 @@
             <DistClean command="/usr/bin/make -f &quot;/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="rebuild_cache">
-         <Option working_dir="/home/hj/work/dem/build-Delaunay_pic-Desktop-Default" />
-         <Option type="4" />
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/Makefile&quot;  VERBOSE=1 rebuild_cache" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
       </Build>
       <Unit filename="/home/hj/work/dem/Delaunay_pic/src/display/Display.cpp">
-      </Unit>
-      <Unit filename="/home/hj/work/dem/Delaunay_pic/src/display/Display_qgl.cpp">
-      </Unit>
-      <Unit filename="/home/hj/work/dem/Delaunay_pic/src/mesher/Triangler.cpp">
-      </Unit>
-      <Unit filename="/home/hj/work/dem/Delaunay_pic/src/points/Points_filter.cpp">
-      </Unit>
-      <Unit filename="/home/hj/work/dem/Delaunay_pic/src/struct_class/Struct_Class.cpp">
-      </Unit>
-      <Unit filename="/home/hj/work/dem/Delaunay_pic/src/test/Delaunay_pic.cpp">
+         <Option target="Delaunay_pic"/>
       </Unit>
       <Unit filename="/home/hj/work/dem/Delaunay_pic/src/display/Display.h">
+         <Option target="Delaunay_pic"/>
+      </Unit>
+      <Unit filename="/home/hj/work/dem/Delaunay_pic/src/display/Display_qgl.cpp">
+         <Option target="Delaunay_pic"/>
       </Unit>
       <Unit filename="/home/hj/work/dem/Delaunay_pic/src/display/Display_qgl.h">
+         <Option target="Delaunay_pic"/>
+      </Unit>
+      <Unit filename="/home/hj/work/dem/Delaunay_pic/src/mesher/Triangler.cpp">
+         <Option target="Delaunay_pic"/>
       </Unit>
       <Unit filename="/home/hj/work/dem/Delaunay_pic/src/mesher/Triangler.h">
+         <Option target="Delaunay_pic"/>
+      </Unit>
+      <Unit filename="/home/hj/work/dem/Delaunay_pic/src/points/Points_filter.cpp">
+         <Option target="Delaunay_pic"/>
       </Unit>
       <Unit filename="/home/hj/work/dem/Delaunay_pic/src/points/Points_filter.h">
+         <Option target="Delaunay_pic"/>
+      </Unit>
+      <Unit filename="/home/hj/work/dem/Delaunay_pic/src/struct_class/Struct_Class.cpp">
+         <Option target="Delaunay_pic"/>
       </Unit>
       <Unit filename="/home/hj/work/dem/Delaunay_pic/src/struct_class/Struct_Class.h">
+         <Option target="Delaunay_pic"/>
+      </Unit>
+      <Unit filename="/home/hj/work/dem/Delaunay_pic/src/test/Delaunay_pic.cpp">
+         <Option target="Delaunay_pic"/>
       </Unit>
       <Unit filename="/home/hj/work/dem/Delaunay_pic/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />

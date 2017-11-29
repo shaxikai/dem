@@ -191,8 +191,10 @@ int delaunayPic() {
         }
 
 
-//        Display_cv D;
-//        D.show(frame.img, frame.ptsCv);
+
+        Display_cv D(frame);
+        D.frame2dem();
+
 
         if (count == 1) break;
     }

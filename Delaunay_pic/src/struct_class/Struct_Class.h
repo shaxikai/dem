@@ -25,5 +25,15 @@ public :
     std::vector<TriEle>  tris;
 };
 
+class Dem {
+public :
+
+    pi::Point2i tileMin, tileMax;
+    pi::Point2i pixMin,  pixMax;
+    int size = 256;
+
+    cv::Mat image;
+    cv::Mat img_h;
+};
 
 #endif // STRUCT_CLASS_H

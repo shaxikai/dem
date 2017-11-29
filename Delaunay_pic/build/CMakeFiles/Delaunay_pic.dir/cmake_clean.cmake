@@ -1,4 +1,4 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o"
   "CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o"
   "CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o"
@@ -10,6 +10,6 @@ FILE(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang CXX)
-  INCLUDE(CMakeFiles/Delaunay_pic.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang CXX)
+  include(CMakeFiles/Delaunay_pic.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
