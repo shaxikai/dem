@@ -6,13 +6,13 @@
 #include <SPtr.h>
 #include <GSLAM/core/GPS.h>
 
+#include "Dem_qgl.h"
 #include "Display.h"
 #include "Triangler.h"
 #include "Display_qgl.h"
 #include "Points_filter.h"
 
-
-Frame frame;
+SPtr<tileManager> tile_manager;
 
 class CameraPinhole
 {
@@ -60,6 +60,9 @@ int delaunayPic() {
     SPtr<mf::CoordinateTrans> trans;
     pi::SO3d                  ecef2local;
     int count = 0;
+
+    Frame frame;
+
     while(getline(ifs, line)) {
         count ++;
 
@@ -169,7 +172,6 @@ int delaunayPic() {
             frame.tris = T.tris;
         }
 
-
         int h_ = 1;
         while(h_--)
         {
@@ -190,11 +192,11 @@ int delaunayPic() {
             }
         }
 
-
-
-        Display_cv D(frame);
-        D.frame2dem();
-
+        Dem dem;
+        Display_cv D;
+        D.frame2dem(frame, dem);
+        D.demFusion(dem);
+        tile_manager = D.tile_manager;
 
         if (count == 1) break;
     }
@@ -210,9 +212,9 @@ int main(int argc, char** argv)
     QApplication application(argc, argv);
     //google::SetLogDestination(google::INFO, "log_");
 
-    Display_qgl D_qgl;
+    Dem_qgl D_qgl;
     D_qgl.setWindowTitle("simpleViewer");
-    D_qgl.input(frame);
+    D_qgl.input(tile_manager->m_allTile);
     D_qgl.show();
 
     return application.exec();

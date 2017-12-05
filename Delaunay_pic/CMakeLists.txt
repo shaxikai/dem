@@ -33,12 +33,13 @@ message("-- find GLOG")
 find_package(QGLViewer REQUIRED QUIET)
 message("-- find QGLViewer ${QGLVIEWER_LIBRARY}")
 
-
 INCLUDE_DIRECTORIES (BEFORE ./src/MapFusion/)
 INCLUDE_DIRECTORIES (BEFORE ./src/mesher/)
 INCLUDE_DIRECTORIES (BEFORE ./src/display/)
 INCLUDE_DIRECTORIES (BEFORE ./src/points/)
 INCLUDE_DIRECTORIES (BEFORE ./src/struct_class/)
+INCLUDE_DIRECTORIES (BEFORE ./src/tile/)
+
 
 FIND_LIBRARY(QGLVIEWER_LIBRARY
         NAMES
@@ -66,9 +67,11 @@ SET(SOURCES_FILES
     ./src/mesher/Triangler.h
     ./src/mesher/Triangler.cpp
     ./src/display/Display.cpp
+    ./src/display/Dem_qgl.cpp
     ./src/display/Display_qgl.cpp
     ./src/points/Points_filter.cpp
     ./src/struct_class/Struct_Class.cpp
+    ./src/tile/Tile.cpp
     )
 
 LIST(APPEND LINK_LIBS

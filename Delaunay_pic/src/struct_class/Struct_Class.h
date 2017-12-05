@@ -6,6 +6,8 @@
 #include <vector>
 #include <Point.h>
 
+
+
 struct TriEle
 {
     int c_1, c_2, c_3;
@@ -31,9 +33,11 @@ public :
     pi::Point2i tileMin, tileMax;
     pi::Point2i pixMin,  pixMax;
     int size = 256;
+    int scale = 5;
 
     cv::Mat image;
-    cv::Mat img_h;
+    cv::Mat weight;
+    double  img_h[100][17][17];
 };
 
 #endif // STRUCT_CLASS_H

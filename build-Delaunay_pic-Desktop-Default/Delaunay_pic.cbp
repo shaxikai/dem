@@ -56,6 +56,7 @@
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/mesher" />
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/points" />
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/struct_class" />
+            <Add directory="/home/hj/work/dem/Delaunay_pic/./src/tile" />
             <Add directory="/home/hj/work/dem/build-Delaunay_pic-Desktop-Default" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -97,6 +98,7 @@
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/mesher" />
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/points" />
             <Add directory="/home/hj/work/dem/Delaunay_pic/./src/struct_class" />
+            <Add directory="/home/hj/work/dem/Delaunay_pic/./src/tile" />
             <Add directory="/home/hj/work/dem/build-Delaunay_pic-Desktop-Default" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -120,6 +122,12 @@
          </MakeCommands>
       </Target>
       </Build>
+      <Unit filename="/home/hj/work/dem/Delaunay_pic/src/display/Dem_qgl.cpp">
+         <Option target="Delaunay_pic"/>
+      </Unit>
+      <Unit filename="/home/hj/work/dem/Delaunay_pic/src/display/Dem_qgl.h">
+         <Option target="Delaunay_pic"/>
+      </Unit>
       <Unit filename="/home/hj/work/dem/Delaunay_pic/src/display/Display.cpp">
          <Option target="Delaunay_pic"/>
       </Unit>
@@ -151,6 +159,12 @@
          <Option target="Delaunay_pic"/>
       </Unit>
       <Unit filename="/home/hj/work/dem/Delaunay_pic/src/test/Delaunay_pic.cpp">
+         <Option target="Delaunay_pic"/>
+      </Unit>
+      <Unit filename="/home/hj/work/dem/Delaunay_pic/src/tile/Tile.cpp">
+         <Option target="Delaunay_pic"/>
+      </Unit>
+      <Unit filename="/home/hj/work/dem/Delaunay_pic/src/tile/Tile.h">
          <Option target="Delaunay_pic"/>
       </Unit>
       <Unit filename="/home/hj/work/dem/Delaunay_pic/CMakeLists.txt">

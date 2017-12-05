@@ -129,9 +129,33 @@ CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o.provides: CMakeFiles/Delau
 CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o.provides.build: CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o
 
 
+CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.o: CMakeFiles/Delaunay_pic.dir/flags.make
+CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.o: /home/hj/work/dem/Delaunay_pic/src/display/Dem_qgl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.o -c /home/hj/work/dem/Delaunay_pic/src/display/Dem_qgl.cpp
+
+CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.i"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hj/work/dem/Delaunay_pic/src/display/Dem_qgl.cpp > CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.i
+
+CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.s"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hj/work/dem/Delaunay_pic/src/display/Dem_qgl.cpp -o CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.s
+
+CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.o.requires:
+
+.PHONY : CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.o.requires
+
+CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.o.provides: CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.o.provides.build
+.PHONY : CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.o.provides
+
+CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.o.provides.build: CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.o
+
+
 CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o: CMakeFiles/Delaunay_pic.dir/flags.make
 CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o: /home/hj/work/dem/Delaunay_pic/src/display/Display_qgl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o -c /home/hj/work/dem/Delaunay_pic/src/display/Display_qgl.cpp
 
 CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.i: cmake_force
@@ -155,7 +179,7 @@ CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o.provides.build: CMakeF
 
 CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o: CMakeFiles/Delaunay_pic.dir/flags.make
 CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o: /home/hj/work/dem/Delaunay_pic/src/points/Points_filter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o -c /home/hj/work/dem/Delaunay_pic/src/points/Points_filter.cpp
 
 CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.i: cmake_force
@@ -179,7 +203,7 @@ CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.provides.build: CMake
 
 CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o: CMakeFiles/Delaunay_pic.dir/flags.make
 CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o: /home/hj/work/dem/Delaunay_pic/src/struct_class/Struct_Class.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o -c /home/hj/work/dem/Delaunay_pic/src/struct_class/Struct_Class.cpp
 
 CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.i: cmake_force
@@ -201,14 +225,40 @@ CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.provides: CMakeF
 CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.provides.build: CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o
 
 
+CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.o: CMakeFiles/Delaunay_pic.dir/flags.make
+CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.o: /home/hj/work/dem/Delaunay_pic/src/tile/Tile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.o -c /home/hj/work/dem/Delaunay_pic/src/tile/Tile.cpp
+
+CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.i"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hj/work/dem/Delaunay_pic/src/tile/Tile.cpp > CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.i
+
+CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.s"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hj/work/dem/Delaunay_pic/src/tile/Tile.cpp -o CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.s
+
+CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.o.requires:
+
+.PHONY : CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.o.requires
+
+CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.o.provides: CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.o.provides.build
+.PHONY : CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.o.provides
+
+CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.o.provides.build: CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.o
+
+
 # Object files for target Delaunay_pic
 Delaunay_pic_OBJECTS = \
 "CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o" \
 "CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o" \
 "CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o" \
+"CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.o" \
 "CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o" \
 "CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o" \
-"CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o"
+"CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o" \
+"CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.o"
 
 # External object files for target Delaunay_pic
 Delaunay_pic_EXTERNAL_OBJECTS =
@@ -216,9 +266,11 @@ Delaunay_pic_EXTERNAL_OBJECTS =
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o
+Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.o
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o
+Delaunay_pic: CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.o
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/build.make
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libmpfr.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libgmp.so
@@ -281,7 +333,7 @@ Delaunay_pic: /usr/lib/x86_64-linux-gnu/libGL.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libGLU.so
 Delaunay_pic: /usr/lib/x86_64-linux-gnu/libQGLViewer.so.2.5
 Delaunay_pic: CMakeFiles/Delaunay_pic.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Delaunay_pic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hj/work/dem/build-Delaunay_pic-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Delaunay_pic"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Delaunay_pic.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -292,9 +344,11 @@ CMakeFiles/Delaunay_pic.dir/build: Delaunay_pic
 CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.o.requires
 CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/mesher/Triangler.cpp.o.requires
 CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/display/Display.cpp.o.requires
+CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.o.requires
 CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/display/Display_qgl.cpp.o.requires
 CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/points/Points_filter.cpp.o.requires
 CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/struct_class/Struct_Class.cpp.o.requires
+CMakeFiles/Delaunay_pic.dir/requires: CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.o.requires
 
 .PHONY : CMakeFiles/Delaunay_pic.dir/requires
 

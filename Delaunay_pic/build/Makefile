@@ -123,6 +123,33 @@ Delaunay_pic/fast:
 	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/build
 .PHONY : Delaunay_pic/fast
 
+src/display/Dem_qgl.o: src/display/Dem_qgl.cpp.o
+
+.PHONY : src/display/Dem_qgl.o
+
+# target to build an object file
+src/display/Dem_qgl.cpp.o:
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.o
+.PHONY : src/display/Dem_qgl.cpp.o
+
+src/display/Dem_qgl.i: src/display/Dem_qgl.cpp.i
+
+.PHONY : src/display/Dem_qgl.i
+
+# target to preprocess a source file
+src/display/Dem_qgl.cpp.i:
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.i
+.PHONY : src/display/Dem_qgl.cpp.i
+
+src/display/Dem_qgl.s: src/display/Dem_qgl.cpp.s
+
+.PHONY : src/display/Dem_qgl.s
+
+# target to generate assembly for a file
+src/display/Dem_qgl.cpp.s:
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/display/Dem_qgl.cpp.s
+.PHONY : src/display/Dem_qgl.cpp.s
+
 src/display/Display.o: src/display/Display.cpp.o
 
 .PHONY : src/display/Display.o
@@ -285,6 +312,33 @@ src/test/Delaunay_pic.cpp.s:
 	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/test/Delaunay_pic.cpp.s
 .PHONY : src/test/Delaunay_pic.cpp.s
 
+src/tile/Tile.o: src/tile/Tile.cpp.o
+
+.PHONY : src/tile/Tile.o
+
+# target to build an object file
+src/tile/Tile.cpp.o:
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.o
+.PHONY : src/tile/Tile.cpp.o
+
+src/tile/Tile.i: src/tile/Tile.cpp.i
+
+.PHONY : src/tile/Tile.i
+
+# target to preprocess a source file
+src/tile/Tile.cpp.i:
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.i
+.PHONY : src/tile/Tile.cpp.i
+
+src/tile/Tile.s: src/tile/Tile.cpp.s
+
+.PHONY : src/tile/Tile.s
+
+# target to generate assembly for a file
+src/tile/Tile.cpp.s:
+	$(MAKE) -f CMakeFiles/Delaunay_pic.dir/build.make CMakeFiles/Delaunay_pic.dir/src/tile/Tile.cpp.s
+.PHONY : src/tile/Tile.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -294,6 +348,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Delaunay_pic"
+	@echo "... src/display/Dem_qgl.o"
+	@echo "... src/display/Dem_qgl.i"
+	@echo "... src/display/Dem_qgl.s"
 	@echo "... src/display/Display.o"
 	@echo "... src/display/Display.i"
 	@echo "... src/display/Display.s"
@@ -312,6 +369,9 @@ help:
 	@echo "... src/test/Delaunay_pic.o"
 	@echo "... src/test/Delaunay_pic.i"
 	@echo "... src/test/Delaunay_pic.s"
+	@echo "... src/tile/Tile.o"
+	@echo "... src/tile/Tile.i"
+	@echo "... src/tile/Tile.s"
 .PHONY : help
 
 

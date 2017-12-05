@@ -5,18 +5,20 @@
 #include <opencv2/imgproc/imgproc.hpp>
 
 #include "Struct_Class.h"
+#include "Tile.h"
 
 class Display_cv
 {
 public:
-    Display_cv(){}
-    Display_cv(Frame frame_);
+    Display_cv();
+
+    int frame2dem(Frame& frame, Dem& dem);
+
+    int demFusion(Dem& dem);
 
 
-    void frame2dem();
+    SPtr<tileManager> tile_manager;
 
-    Frame frame;
-    Dem   dem;
 };
 
 #endif // DISPLAY_H
