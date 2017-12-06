@@ -1,6 +1,7 @@
 #include <fstream>
 #include <sstream>
 #include <qapplication.h>
+#include <pthread.h>
 
 #include <CoordinateTrans.h>
 #include <SPtr.h>
@@ -12,7 +13,7 @@
 #include "Display_qgl.h"
 #include "Points_filter.h"
 
-SPtr<tileManager> tile_manager;
+Display_cv D;
 
 class CameraPinhole
 {
@@ -53,7 +54,6 @@ int delaunayPic() {
     ifstream ifs("./mavic-library/mapfusion.txt");
     if(!ifs.is_open()) {
         cerr << "Can't open mapfusion file.\n";
-        return -1;
     }
 
     string line;
@@ -110,8 +110,6 @@ int delaunayPic() {
         trans->getXYfromLngLat(lla.y, lla.x, t_.x, t_.y);
         t_.z = lla.z - (400);
 
-
-
         // camera parameters
         int camNum;
         sst >> camNum;
@@ -155,50 +153,54 @@ int delaunayPic() {
         T.triPts(pt);
         frame.tris = T.tris;
 
-        int l_ = 1;
-        while(l_--)
+        //point out
         {
-            ptsFilter.setFrame(frame);
-            l_ =ptsFilter.ptsOutfilter();
-            frame = ptsFilter.frame;
+            int l_ = 1;
+            while(l_--)
+            {
+                ptsFilter.setFrame(frame);
+                l_ =ptsFilter.ptsOutfilter();
+                frame = ptsFilter.frame;
 
-            std::vector<Point> pt;
-            for (int i=0; i<frame.pointPixs.size(); ++i) {
-                pt.push_back(Point(frame.pointPixs[i].x, frame.pointPixs[i].y));
+                std::vector<Point> pt;
+                for (int i=0; i<frame.pointPixs.size(); ++i) {
+                    pt.push_back(Point(frame.pointPixs[i].x, frame.pointPixs[i].y));
+                }
+
+                Triangler T;
+                T.triPts(pt);
+                frame.tris = T.tris;
             }
-
-            Triangler T;
-            T.triPts(pt);
-            frame.tris = T.tris;
         }
 
-        int h_ = 1;
-        while(h_--)
+        //mid filter
         {
-            for (int i=0; i<frame.pointClouds.size(); ++i) {
-                vector<int> neiPts = frame.pt_getNeipts(i);
-                if (neiPts.size()>5) {
-                    vector<double> neiPts_h;
-                    int size = neiPts.size();
-                    for (int j=0; j<size; ++j) {
-                        neiPts_h.push_back(frame.pointClouds[neiPts[j]].z);
-                        sort(neiPts_h.begin(), neiPts_h.end());
-                    }
-                    if (size%2 == 0)
-                        frame.pointClouds[i].z = 0.5 * (neiPts_h[size/2] + neiPts_h[size/2-1]);
-                    else
-                        frame.pointClouds[i].z = neiPts_h[size/2];
-                }
-            }
+//            int h_ = 1;
+//            while(h_--)
+//            {
+//                for (int i=0; i<frame.pointClouds.size(); ++i) {
+//                    vector<int> neiPts = frame.pt_getNeipts(i);
+//                    if (neiPts.size()>5) {
+//                        vector<double> neiPts_h;
+//                        int size = neiPts.size();
+//                        for (int j=0; j<size; ++j) {
+//                            neiPts_h.push_back(frame.pointClouds[neiPts[j]].z);
+//                            sort(neiPts_h.begin(), neiPts_h.end());
+//                        }
+//                        if (size%2 == 0)
+//                            frame.pointClouds[i].z = 0.5 * (neiPts_h[size/2] + neiPts_h[size/2-1]);
+//                        else
+//                            frame.pointClouds[i].z = neiPts_h[size/2];
+//                    }
+//                }
+//            }
         }
 
         Dem dem;
-        Display_cv D;
         D.frame2dem(frame, dem);
         D.demFusion(dem);
-        tile_manager = D.tile_manager;
 
-        if (count == 1) break;
+        if (count == 4) break;
     }
 
 
@@ -207,14 +209,18 @@ int delaunayPic() {
 
 int main(int argc, char** argv)
 {
+//    pthread_t thread;
+//    if ( pthread_create( &thread, NULL, delaunayPic, NULL) ) {
+//      printf("error creating thread.");
+//      abort();
+//    }
     delaunayPic();
-
     QApplication application(argc, argv);
     //google::SetLogDestination(google::INFO, "log_");
 
     Dem_qgl D_qgl;
     D_qgl.setWindowTitle("simpleViewer");
-    D_qgl.input(tile_manager->m_allTile);
+    D_qgl.input(D.tile_manager->m_allTile);
     D_qgl.show();
 
     return application.exec();

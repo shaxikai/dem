@@ -247,6 +247,8 @@ sstream
 -
 qapplication.h
 -
+pthread.h
+-
 CoordinateTrans.h
 -
 SPtr.h

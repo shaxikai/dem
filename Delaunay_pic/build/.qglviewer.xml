@@ -4,16 +4,16 @@
     <foregroundColor red="180" blue="180" green="180"/>
     <backgroundColor red="255" blue="255" green="255"/>
   </State>
-  <Display axisIsDrawn="false" gridIsDrawn="true" FPSIsDisplayed="false" cameraIsEdited="false"/>
-  <Geometry fullScreen="false" width="2560" posX="0" height="1051" posY="0"/>
+  <Display axisIsDrawn="false" gridIsDrawn="false" FPSIsDisplayed="false" cameraIsEdited="false"/>
+  <Geometry fullScreen="false" width="1274" posX="0" height="1048" posY="0"/>
   <Camera>
     <Parameters fieldOfView="0.785398" sceneRadius="500" Type="PERSPECTIVE" zNearCoefficient="0.005" orthoCoef="0.414214" zClippingCoefficient="1.73205">
       <SceneCenter x="0" y="0" z="0"/>
     </Parameters>
     <Stereo focusDistance="1207.11" physScreenWidth="0.5" IODist="0.062"/>
     <ManipulatedCameraFrame>
-      <position x="-106.497" y="-357.378" z="-484.022"/>
-      <orientation q0="-0.85724" q1="0.401523" q2="-0.0476712" q3="-0.318821"/>
+      <position x="335.725" y="-258.055" z="683.108"/>
+      <orientation q0="0.24451" q1="0.152309" q2="0.458533" q3="0.840693"/>
       <ManipulatedParameters transSens="1" rotSens="1" wheelSens="1" spinSens="0.3"/>
       <ManipulatedCameraParameters flySpeed="5">
         <flyUpVector x="0" y="1" z="0"/>

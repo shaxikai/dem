@@ -28,8 +28,8 @@ int tileManager::getTile(int x, int y, std::shared_ptr<tileElement> &te) {
 }
 
 int tileManager::setTile(int x, int y, std::shared_ptr<tileElement> &te) {
-    te->x = x;
-    te->y = y;
+    te->x = y;
+    te->y = x;
 
     int64_t h = tileElement::hashVal(x, y);
     te->hashIndex = h;
