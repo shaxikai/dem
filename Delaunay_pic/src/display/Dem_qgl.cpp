@@ -12,8 +12,8 @@ void Dem_qgl::init()
     setBackgroundColor(::Qt::white);
     glDisable(GL_LIGHTING);
     //setGridIsDrawn();
-    setSceneRadius(500);
-    camera()->fitSphere(qglviewer::Vec(0,0,0), 600);
+    setSceneRadius(2000);
+    camera()->fitSphere(qglviewer::Vec(0,0,0), 2000);
 }
 
 void Dem_qgl::draw()
@@ -23,17 +23,17 @@ void Dem_qgl::draw()
 
     //show axis
     {
-//        glBegin(GL_LINES);
-//        glColor3f(255.0f, 0.0f, 0.0f);
-//        glVertex3dv(Vec(0.0, 0.0, 0.0));
-//        glVertex3dv(Vec(20.0, 0.0, 0.0));
-//        glColor3f(255.0f, 255.0f, 0.0f);
-//        glVertex3dv(Vec(0.0, 0.0, 0.0));
-//        glVertex3dv(Vec(0.0, 20.0, 0.0));
-//        glColor3f(0.0f, 255.0f, 0.0f);
-//        glVertex3dv(Vec(0.0, 0.0, 0.0));
-//        glVertex3dv(Vec(0.0, 0.0, 20.0));
-//        glEnd();
+        glBegin(GL_LINES);
+        glColor3f(255.0f, 0.0f, 0.0f);
+        glVertex3dv(Vec(0.0, 0.0, 0.0));
+        glVertex3dv(Vec(20.0, 0.0, 0.0));
+        glColor3f(255.0f, 255.0f, 0.0f);
+        glVertex3dv(Vec(0.0, 0.0, 0.0));
+        glVertex3dv(Vec(0.0, 20.0, 0.0));
+        glColor3f(0.0f, 255.0f, 0.0f);
+        glVertex3dv(Vec(0.0, 0.0, 0.0));
+        glVertex3dv(Vec(0.0, 0.0, 20.0));
+        glEnd();
     }
 
     TileHash::iterator it = m_allTile.begin();
@@ -49,28 +49,28 @@ void Dem_qgl::draw()
 
         //show mesher
         {
-            for (int ci=0; ci<cellSize; ++ci) {
-                for (int cj=0; cj<cellSize; ++cj) {
-                    Vec corsVec[4];
-                    corsVec[0] = Vec(ltcorX+cellSize*cj,
-                                     ltcorY+cellSize*ci,
-                                     te->cors[ci][cj]);
-                    corsVec[1] = Vec(ltcorX+cellSize*(cj+1),
-                                     ltcorY+cellSize*ci,
-                                     te->cors[ci][cj+1]);
-                    corsVec[2] = Vec(ltcorX+cellSize*(cj+1),
-                                     ltcorY+cellSize*(ci+1),
-                                     te->cors[ci+1][cj+1]);
-                    corsVec[3] = Vec(ltcorX+cellSize*(cj),
-                                     ltcorY+cellSize*(ci+1),
-                                     te->cors[ci+1][cj]);
-                    glBegin(GL_LINE_LOOP);
-                    glColor3f(0.0f, 0.0f, 255.0f);
-                    for (int i=0; i<4; ++i)
-                        glVertex3dv(corsVec[i]);
-                    glEnd();
-                }
-            }
+//            for (int ci=0; ci<cellSize; ++ci) {
+//                for (int cj=0; cj<cellSize; ++cj) {
+//                    Vec corsVec[4];
+//                    corsVec[0] = Vec(ltcorX+cellSize*cj,
+//                                     ltcorY+cellSize*ci,
+//                                     te->cors[ci][cj]);
+//                    corsVec[1] = Vec(ltcorX+cellSize*(cj+1),
+//                                     ltcorY+cellSize*ci,
+//                                     te->cors[ci][cj+1]);
+//                    corsVec[2] = Vec(ltcorX+cellSize*(cj+1),
+//                                     ltcorY+cellSize*(ci+1),
+//                                     te->cors[ci+1][cj+1]);
+//                    corsVec[3] = Vec(ltcorX+cellSize*(cj),
+//                                     ltcorY+cellSize*(ci+1),
+//                                     te->cors[ci+1][cj]);
+//                    glBegin(GL_LINE_LOOP);
+//                    glColor3f(0.0f, 0.0f, 255.0f);
+//                    for (int i=0; i<4; ++i)
+//                        glVertex3dv(corsVec[i]);
+//                    glEnd();
+//                }
+//            }
         }
 
         glEnable(GL_TEXTURE_2D);

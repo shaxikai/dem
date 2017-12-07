@@ -1,7 +1,7 @@
 #include <fstream>
 #include <sstream>
 #include <qapplication.h>
-#include <pthread.h>
+#include <thread>
 
 #include <CoordinateTrans.h>
 #include <SPtr.h>
@@ -13,7 +13,6 @@
 #include "Display_qgl.h"
 #include "Points_filter.h"
 
-Display_cv D;
 
 class CameraPinhole
 {
@@ -48,23 +47,28 @@ public:
     double fx,fy,cx,cy,fx_inv,fy_inv;
 };
 
-int delaunayPic() {
-    string datapath = "./mavic-library";
-
-    ifstream ifs("./mavic-library/mapfusion.txt");
+void delaunayPic(Dem_qgl& qgl)
+{
+    ifstream ifs("/home/hj/work/dem/Delaunay_pic/build/mavic-library/mapfusion.txt");
     if(!ifs.is_open()) {
         cerr << "Can't open mapfusion file.\n";
     }
 
-    string line;
-    SPtr<mf::CoordinateTrans> trans;
-    pi::SO3d                  ecef2local;
-    int count = 0;
-
+    string datapath = "./mavic-library";
     Frame frame;
 
-    while(getline(ifs, line)) {
-        count ++;
+    SPtr<mf::CoordinateTrans> trans;
+    pi::SO3d                  ecef2local;
+    Display_cv D;
+
+    string line;
+    int count = 0;
+    while(getline(ifs, line))
+    {
+        count++;
+        //if (count < 4) continue;
+        cout << count << endl;
+
 
         line.erase(std::remove(line.begin(),line.end(),','),line.end());
         stringstream sst(line);
@@ -118,7 +122,7 @@ int delaunayPic() {
             sst >> camPara[i];
         }
         CameraPinhole camera(camPara[0], camPara[1], camPara[2],
-                             camPara[3], camPara[4], camPara[5]);
+                camPara[3], camPara[4], camPara[5]);
 
 
         // points cloud
@@ -175,53 +179,48 @@ int delaunayPic() {
 
         //mid filter
         {
-//            int h_ = 1;
-//            while(h_--)
-//            {
-//                for (int i=0; i<frame.pointClouds.size(); ++i) {
-//                    vector<int> neiPts = frame.pt_getNeipts(i);
-//                    if (neiPts.size()>5) {
-//                        vector<double> neiPts_h;
-//                        int size = neiPts.size();
-//                        for (int j=0; j<size; ++j) {
-//                            neiPts_h.push_back(frame.pointClouds[neiPts[j]].z);
-//                            sort(neiPts_h.begin(), neiPts_h.end());
-//                        }
-//                        if (size%2 == 0)
-//                            frame.pointClouds[i].z = 0.5 * (neiPts_h[size/2] + neiPts_h[size/2-1]);
-//                        else
-//                            frame.pointClouds[i].z = neiPts_h[size/2];
-//                    }
-//                }
-//            }
+            //            int h_ = 1;
+            //            while(h_--)
+            //            {
+            //                for (int i=0; i<frame.pointClouds.size(); ++i) {
+            //                    vector<int> neiPts = frame.pt_getNeipts(i);
+            //                    if (neiPts.size()>5) {
+            //                        vector<double> neiPts_h;
+            //                        int size = neiPts.size();
+            //                        for (int j=0; j<size; ++j) {
+            //                            neiPts_h.push_back(frame.pointClouds[neiPts[j]].z);
+            //                            sort(neiPts_h.begin(), neiPts_h.end());
+            //                        }
+            //                        if (size%2 == 0)
+            //                            frame.pointClouds[i].z = 0.5 * (neiPts_h[size/2] + neiPts_h[size/2-1]);
+            //                        else
+            //                            frame.pointClouds[i].z = neiPts_h[size/2];
+            //                    }
+            //                }
+            //            }
         }
+
 
         Dem dem;
         D.frame2dem(frame, dem);
         D.demFusion(dem);
-
-        if (count == 4) break;
+        //cout << "fusion done" << endl;
+        qgl.input(D.tile_manager->m_allTile);
+        qgl.update();
+        //getchar();
     }
-
-
 }
 
 
 int main(int argc, char** argv)
 {
-//    pthread_t thread;
-//    if ( pthread_create( &thread, NULL, delaunayPic, NULL) ) {
-//      printf("error creating thread.");
-//      abort();
-//    }
-    delaunayPic();
     QApplication application(argc, argv);
-    //google::SetLogDestination(google::INFO, "log_");
 
     Dem_qgl D_qgl;
-    D_qgl.setWindowTitle("simpleViewer");
-    D_qgl.input(D.tile_manager->m_allTile);
+    thread t1(delaunayPic, std::ref(D_qgl));
+
     D_qgl.show();
+    D_qgl.setWindowTitle("simpleViewer");
 
     return application.exec();
 }

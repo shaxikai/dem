@@ -6,8 +6,12 @@ using namespace std;
 using namespace cv;
 
 inline int tileCoor(double x, int size){
-    if (x>0) return x/size+1;
+    if (x > 0) return x/size+1;
     else return x/size-1;
+}
+inline int pixCoor(int x, int size, bool flag) {
+    if ( flag ) return x>0? x*size : (x+1)*size;
+    else return x>0? (x-1)*size : x*size;
 }
 
 Display_cv::Display_cv()
@@ -40,14 +44,21 @@ int Display_cv::frame2dem(Frame& frame, Dem& dem)
 
     dem.tileMax = pi::Point2i(tileCoor(xmax, size), tileCoor(ymax, size));
     dem.tileMin = pi::Point2i(tileCoor(xmin, size), tileCoor(ymin, size));
-    dem.pixMax  = pi::Point2i(dem.tileMax.x*size, dem.tileMax.y*size);
-    dem.pixMin  = pi::Point2i(dem.tileMin.x*size, dem.tileMin.y*size);
+    dem.pixMax  = pi::Point2i(pixCoor(dem.tileMax.x, size, true),
+                              pixCoor(dem.tileMax.y, size, true));
+    dem.pixMin  = pi::Point2i(pixCoor(dem.tileMin.x, size, false),
+                              pixCoor(dem.tileMin.y, size, false));
 
-//    cout << dem.tileMax << endl;
-//    cout << dem.tileMin << endl;
+//    cout << "xmax = " << xmax << endl;
+//    cout << "tileMin = " << dem.tileMin << endl;
+//    cout << "tileMax = " << dem.tileMax << endl;
+//    cout << "pixMin = " << dem.pixMin << endl;
+//    cout << "pixMax = " << dem.pixMax << endl;
 
     int height = dem.pixMax.y - dem.pixMin.y;
     int width  = dem.pixMax.x - dem.pixMin.x;
+
+//    cout << "h = " << height << " w = " << width << endl;
 
     //image
     Mat dst = Mat(height, width, src.type(), Scalar::all(0));
@@ -220,6 +231,8 @@ int Display_cv::demFusion(Dem &dem) {
     cv::Mat image  = dem.image;
     cv::Mat weight = dem.weight;
 
+    //cout << image.rows << " " << image.cols << endl;
+
     //tile fusion
     int h_ = 0;
     for (int i=dem.tileMin.y; i<=dem.tileMax.y; ++i) {
@@ -237,14 +250,15 @@ int Display_cv::demFusion(Dem &dem) {
                                 size*(i-dem.tileMin.y-_i),
                                 size, size);
 
+//            cout << size*(j-dem.tileMin.x-_j) << " "
+//                 << size*(i-dem.tileMin.y-_i) << endl;
+
             cv::Mat tileSrcImg    = image(tileRect).clone();
             cv::Mat tileSrcWeight = weight(tileRect).clone();
 
-//            cv::imshow("src", tileSrcImg);
-//            cv::imshow("wei", tileSrcWeight);
+            //cout << 1 << endl;
 
             SPtr<tileElement> te;
-
             if(!tile_manager->getTile(i, j, te)){
 
                 te = SPtr<tileElement>(new tileElement);
@@ -292,15 +306,11 @@ int Display_cv::demFusion(Dem &dem) {
                     pDstWeight ++;
                 }
             }
-
             te->image.setTo(cv::Scalar::all(0), te->weight == 0);
-
             tile_manager->setTile(i, j, te);
 
-//            cv::imshow("te_image", te->image);
-//            cv::waitKey(-1);
-
             ++h_;
+            //cout << "over" << endl;
         }
     }
     return 0;
